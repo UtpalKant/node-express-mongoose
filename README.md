@@ -14,6 +14,14 @@ NOTE: For now the application is configured with my mongodb cluster URL. It can 
 Only Step 3 will change.
 Either do "npm run start" or "npm start" or "node app"
 
+routes:
+
+1. http://localhost:8080/login
+2. http://localhost:8080/api/getuser
+3. http://localhost:8080/api/getpost
+4. http://localhost:8080/admin/users
+
+
 NOTE: By default user with id: 1, 2, 3 will be set as admin, others will be simple users.
 
 Please write me at "rudra.utpal@gmail.com" or call me at "+91 6200557251" for any query.
