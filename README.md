@@ -21,6 +21,8 @@ routes:
 3. http://localhost:8080/api/getpost
 4. http://localhost:8080/admin/users
 
+API's are protected & hence require bearer token in Headers as "Authorization". 
+
 
 NOTE: By default user with id: 1, 2, 3 will be set as admin, others will be simple users.
 
