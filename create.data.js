@@ -1,6 +1,5 @@
 const request = require("request");
-const baseUrl = 'https://jsonplaceholder.typicode.com/';
-const mongoBaseUrl = `mongodb+srv://utest01:P%40ssw0rd@cluster0-dgqse.mongodb.net/`;
+const { mongodbClusterUrl, baseUrl  } = require('./config');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const UsersModel = require('./models/user.model');
@@ -22,7 +21,7 @@ getData = (routeUrl) => {
 
 // connection creation method.
 let createConnection = (dbName) => {
-    return mongoose.connect(`${mongoBaseUrl}${dbName}`, {
+    return mongoose.connect(`${mongodbClusterUrl}${dbName}`, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
