@@ -22,7 +22,7 @@ routes:
 4. http://localhost:8080/admin/users
 
 API's are protected & hence require bearer token in Headers as "Authorization". 
-
+On successful login you get a token that is valid for a given time.
 
 NOTE: By default user with id: 1, 2, 3 will be set as admin, others will be simple users.
 
